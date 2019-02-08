@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.druplay.radioapp.MainActivity">
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        android:title="About"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_report"
+        android:orderInCategory="100"
+        android:title="Manage Report"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_out"
+        android:orderInCategory="100"
+        android:title="Sign Out"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_exit"
+        android:orderInCategory="100"
+        android:title="Exit"
+        app:showAsAction="always" />
+</menu>

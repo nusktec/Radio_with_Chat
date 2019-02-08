@@ -1,0 +1,89 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "org.druplay.radioapp"
+        minSdkVersion 17
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:design:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //Lottie Animation
+    implementation 'org.sufficientlysecure:html-textview:3.6'
+    implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
+
+    //cardview
+    implementation 'com.android.support:cardview-v7:27.1.1'
+
+    //custom implementation
+    implementation 'com.beardedhen:androidbootstrap:2.3.2'
+    //Shiner Effect
+    implementation 'com.facebook.shimmer:shimmer:0.3.0'
+    implementation 'com.github.wickerlabs:CallLogs:1.09'
+    //Sweet Alert
+    implementation 'com.github.f0ris.sweetalert:library:1.5.1'
+    //Pick Image and Crop
+    implementation 'com.egistli.droid-image-picker:droid-image-picker:0.0.2'
+    //Image processor
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'jp.wasabeef:picasso-transformations:2.2.1'
+    //Play service
+    implementation 'com.google.android.gms:play-services-maps:15.0.1'
+    //Beta webview
+    implementation 'com.github.delight-im:Android-AdvancedWebView:v3.0.0'
+    //toasty
+    implementation 'com.github.GrenderG:Toasty:1.3.0'
+    //ripple animation
+    implementation 'com.skyfishjy.ripplebackground:library:1.0.1'
+    //'Google location'
+    implementation 'com.google.android.gms:play-services-location:15.0.1'
+    //SimpleLocation
+    implementation 'com.github.delight-im:Android-SimpleLocation:v1.0.1'
+    //Loti animation
+    implementation 'com.airbnb.android:lottie:2.6.1'
+    implementation files('libs/android-async-http-1.4.9.jar')
+    implementation files('libs/httpclient-4.4.1.2.jar')
+    //View Animation
+    implementation 'com.jaredrummler:android-animations:1.0.0'
+    //Android networkin
+    implementation 'com.amitshekhar.android:android-networking:1.0.2'
+    implementation 'com.amitshekhar.android:jackson-android-networking:1.0.2'
+    //Circle Image
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    // RecyclerView
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    //Shared image view
+    implementation 'net.karthikraj.shapesimage:shapesimage:1.0.2'
+    //Material design
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+    //Recorder
+    implementation 'com.github.adrielcafe:AndroidAudioRecorder:0.3.0'
+    //Showcase
+    implementation 'com.github.deano2390:MaterialShowcaseView:1.2.0@aar'
+    //Button navbar
+    implementation 'com.github.jeancsanchez:JcPlayer:2.6.13'
+    //Image slider
+    implementation 'com.github.smarteist:autoimageslider:1.1.1'
+    //Image loader
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+}

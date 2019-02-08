@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00c2fd</color>
+    <color name="colorPrimaryDark">#00c2fd</color>
+    <color name="colorAccent">#071116</color>
+    <color name="colorMix1">#fbfeff</color>
+    <color name="colorMix2">#03a2d3</color>
+    <color name="colorMix3">#00c3fe</color>
+    <color name="colorMix21">#805fce</color>
+    <color name="colorMix22">#b27aeb</color>
+    <color name="coolWhite">#383838</color>
+    <color name="colorShowCase">#bf000000</color>
+    <color name="colorFadeWhite">#b9ffffff</color>
+    <color name="radioWhite">#f6f2f2</color>
+</resources>

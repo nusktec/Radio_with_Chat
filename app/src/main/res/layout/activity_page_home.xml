@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PageHome">
+
+
+    <com.smarteist.autoimageslider.SliderLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:id="@+id/imageSlider"/>
+
+    <com.example.jean.jcplayer.view.JcPlayerView
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        app:random_icon_color="#fff"
+        app:show_repeat_button="false"
+        app:show_random_button="false"
+        android:showDividers="beginning"
+        app:next_icon_color="@color/radioWhite"
+        app:pause_icon_color="@color/radioWhite"
+        app:play_icon_color="@color/radioWhite"
+        app:previous_icon_color="@color/radioWhite"
+        app:progress_color="@color/radioWhite"
+        app:seek_bar_color="@color/radioWhite"
+        app:text_audio_title_color="#fff3bf"
+        android:background="@drawable/curved_radio"
+        app:text_audio_current_duration_color="@color/radioWhite"
+        app:text_audio_duration_color="@color/radioWhite"
+        android:id="@+id/jcplayer"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/fluid_loading_animation"
+        android:layout_centerInParent="true"
+        android:id="@+id/loader"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+</RelativeLayout>

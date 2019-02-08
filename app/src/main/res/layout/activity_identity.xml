@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityIdentity">
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@drawable/musicinthedi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:background="#23000000"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/shuttune"
+            android:padding="15dp"
+            android:text="@string/help_us_to_identify_you"
+            android:textColor="@color/colorMix1"
+            android:textSize="25sp" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <net.karthikraj.shapesimage.ShapesImage
+                android:id="@+id/imgProfile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/blnk_photo"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/txtfname"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/your_nickname"
+                android:inputType="textPersonName"
+                android:maxLength="20"
+                android:padding="2dp"
+                android:textAlignment="center"
+                android:textColor="@color/coolWhite"
+                android:textSize="20sp"
+                android:layout_toEndOf="@id/imgProfile"
+                app:met_hideUnderline="true" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_toEndOf="@id/imgProfile"
+                android:layout_below="@id/txtfname"
+                android:id="@+id/txtphone"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/your_phone"
+                android:inputType="number"
+                android:maxLength="15"
+                android:padding="2dp"
+                android:textAlignment="center"
+                android:textColor="@color/coolWhite"
+                android:textSize="20sp"
+                app:met_hideUnderline="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            app:shimmer_duration="2000"
+            app:shimmer_auto_start="true"
+            app:shimmer_intensity="0.4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnNext"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:fontFamily="@font/lobs"
+            android:drawablePadding="2dp"
+            android:padding="20dp"
+            android:text="@string/continue_"
+            android:textAllCaps="false"
+            android:textColor="@color/colorMix1"
+            android:textSize="25sp" />
+        </com.facebook.shimmer.ShimmerFrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/linkPolicy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        android:text="@string/privacy_policy"
+        android:textStyle="bold"
+        android:textColor="@color/coolWhite" />
+
+</RelativeLayout>

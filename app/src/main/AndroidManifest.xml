@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.druplay.radioapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity
+            android:name="org.druplay.radioapp.ActivitySplash"
+            android:theme="@style/ThemeFullScreen"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.druplay.radioapp.ActivityIdentity"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name="org.druplay.radioapp.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="org.druplay.radioapp.ActivityPolicy"
+            android:label="@string/title_activity_policy"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="org.druplay.radioapp.PageHome" />
+        <activity android:name="org.druplay.radioapp.PageAdvert" />
+        <activity
+            android:name="org.druplay.radioapp.PageConnect"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name="org.druplay.radioapp.WriteReport" />
+        <activity android:name="org.druplay.radioapp.ActivityAbout"></activity>
+    </application>
+
+</manifest>

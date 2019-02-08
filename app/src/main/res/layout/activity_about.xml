@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityAbout">
+
+    <ImageView
+        android:id="@+id/aboutLogo"
+        android:layout_centerInParent="true"
+        android:src="@drawable/full_logo_outline_512"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@id/aboutLogo"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="18sp"
+            android:textColor="#36b8dc"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="@string/druplay_technology"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_margin="10dp"
+            android:textColor="#0d4555"
+            android:textAlignment="center"
+            android:text="Version 1.0\nCore Java Designed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="12sp"
+            android:layout_margin="10dp"
+            android:textColor="#198e17"
+            android:textAlignment="center"
+            android:text="Developed by: Revelation A.F"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/visitWebLink"
+            android:textSize="12sp"
+            android:layout_margin="10dp"
+            android:textColor="#777676"
+            android:textAlignment="center"
+            android:text="www.druplay.com"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:textSize="12sp"
+        android:layout_margin="10dp"
+        android:textColor="#777676"
+        android:textAlignment="center"
+        android:text="Phone: +2348164242320"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
